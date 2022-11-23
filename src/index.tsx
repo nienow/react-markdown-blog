@@ -1,5 +1,20 @@
 import React from 'react';
-import App from "App";
 import {createRoot} from "react-dom/client";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import ArticleList from "ArticleList";
+import Article from "Article";
 
-createRoot(document.getElementById('root')).render(<App/>);
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <ArticleList/>
+  },
+  {
+    path: '/article/:id',
+    element: <Article/>
+  }
+]);
+
+createRoot(document.getElementById('root')).render(
+  <RouterProvider router={router}/>
+);

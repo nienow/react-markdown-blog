@@ -3,6 +3,8 @@
 Some boring introduction that no one will read.
 
 Here is some code:
-```
+
+```html
+
 <div>Hello World</div>
 ```
