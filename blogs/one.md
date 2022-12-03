@@ -8,3 +8,8 @@ Here is some code:
 
 <div>Hello World</div>
 ```
+
+Here is an image:
+
+![Spongebob](/images/spongebob.png)
+

@@ -16,4 +16,5 @@ jobs:
           node-version: '16'
           cache: 'yarn'
       - run: yarn install --immutable
+      - run: yarn run blogs
       - run: yarn run build
