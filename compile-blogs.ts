@@ -16,11 +16,6 @@ export const compileBlogs = () => {
     const htmlFilePath = path.join(rootPath, 'public/blogs', htmlFileName);
 
     const mdStat = fs.statSync(mdFilePath);
-    const htmlStat = fs.statSync(htmlFilePath);
-    if (!htmlStat.isFile()) {
-      // new file
-    }
-
     const md = fs.readFileSync(mdFilePath, {encoding: 'utf8'});
     const html = converter.makeHtml(md);
     fs.writeFileSync(htmlFilePath, html, {encoding: 'utf8'});
