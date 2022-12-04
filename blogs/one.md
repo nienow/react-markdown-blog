@@ -1,15 +1,10 @@
-# Generic Blog Title 1
+# Spongebob will never go out of style
 
-Some boring introduction that no one will read.
+A talking sponge who lives in a pineapple under the sea.
+It's a ridiculously silly theme that feels like it should be for little kids.
+But it's actually better suited for older kids or adults.
 
-Here is some code:
-
-```html
-
-<div>Hello World</div>
-```
-
-Here is an image:
+Here is an image of spongebob:
 
 ![Spongebob](/images/spongebob.png)
 

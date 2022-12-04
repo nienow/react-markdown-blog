@@ -6,9 +6,14 @@ import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
 import xml from 'highlight.js/lib/languages/xml';
 import 'highlight.js/styles/github.css';
+import styled from "styled-components";
 
 hljs.registerLanguage('javascript', javascript);
 hljs.registerLanguage('xml', xml);
+
+const ArticleContainer = styled.div`
+  background-color: white;
+`;
 
 const Article = () => {
   const {id} = useParams();
@@ -28,9 +33,9 @@ const Article = () => {
   }, []);
 
   return (
-    <>
+    <ArticleContainer>
       <div className="article" ref={ref}></div>
-    </>
+    </ArticleContainer>
   );
 }
 
